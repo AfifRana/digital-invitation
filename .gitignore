@@ -1,0 +1,65 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+.nyc_output
+
+# Production
+dist
+dist-ssr
+build
+out
+
+# Misc
+.DS_Store
+*.pem
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Debug
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vite
+*.local
+
+# Cache
+.eslintcache
+.cache
+.parcel-cache
+
+# Temporary files
+tmp/
+temp/
+
+# Large Media Files (Too big for GitHub)
+public/assets/videos/*.mov
+public/assets/videos/*.mp4
+# Only ignore large raw files if needed, comment out if you want to track them
+# public/assets/photos/*.raw

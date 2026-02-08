@@ -1,0 +1,115 @@
+.section {
+    padding: 6rem 1rem;
+    background-color: var(--color-bg);
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.formCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    align-self: start;
+}
+
+.subheading {
+    margin-bottom: 1.5rem;
+    color: var(--color-accent);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: var(--color-gold);
+}
+
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.button {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.wishCard {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-gold);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.wishHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    color: var(--color-gold);
+}
+
+.wishName {
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+}
+
+.wishMessage {
+    color: var(--color-text-light);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

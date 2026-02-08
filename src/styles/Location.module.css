@@ -1,0 +1,90 @@
+.section {
+    padding: 6rem 1rem;
+    background-color: var(--color-cream);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--color-accent);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.info {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.map {
+    min-height: 400px;
+}
+
+.icon {
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+}
+
+.venueName {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+}
+
+.address {
+    color: var(--color-text-light);
+    margin-bottom: 0.5rem;
+}
+
+.time {
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+
+.button {
+    text-decoration: none;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: opacity 0.3s;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .map {
+        height: 300px;
+    }
+
+    .info {
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+}
