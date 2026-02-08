@@ -43,10 +43,6 @@ const Gift = () => {
                     {copied && <span className={styles.copiedText}>Copied to clipboard!</span>}
                 </div>
             </motion.div>
-
-            <footer className={styles.footer}>
-                <p>Made with ❤️ for Romeo & Juliet</p>
-            </footer>
         </section>
     );
 };

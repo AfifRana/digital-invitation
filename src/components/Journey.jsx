@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import { Heart, Calendar, MessageCircle } from 'lucide-react';
 import styles from '../styles/Journey.module.css';
+import coverBg from '../assets/photos/cover-bg.jpg';
+import heroBg from '../assets/photos/hero-bg.jpg';
+import coupleMain from '../assets/photos/couple-main.jpg';
 
 const events = [
     {
@@ -8,21 +11,21 @@ const events = [
         title: 'First Met',
         description: 'We met at a coffee shop in downtown.',
         icon: <MessageCircle size={24} />,
-        image: '/assets/photos/cover-bg.jpg'
+        image: coverBg
     },
     {
         year: '2021',
         title: 'First Date',
         description: 'A magical evening under the stars.',
         icon: <Calendar size={24} />,
-        image: '/assets/photos/hero-bg.jpg'
+        image: heroBg
     },
     {
         year: '2024',
         title: 'She Said Yes!',
         description: 'Proposed at the place we first met.',
         icon: <Heart size={24} />,
-        image: '/assets/photos/couple-main.jpg'
+        image: coupleMain
     },
 ];
 

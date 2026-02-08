@@ -1,6 +1,7 @@
 .section {
     padding: 6rem 1rem;
     background-color: var(--color-bg);
+    text-align: center;
 }
 
 .heading {
@@ -106,6 +107,12 @@
 .wishMessage {
     color: var(--color-text-light);
     line-height: 1.5;
+}
+
+.footer {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-top: 4rem;
 }
 
 @media (max-width: 768px) {

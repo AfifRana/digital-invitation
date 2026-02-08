@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import styles from '../styles/Hero.module.css'; // We'll create module css files or global styles
+import heroVideo from '../assets/videos/hero-video.mp4';
+import heroBg from '../assets/photos/hero-bg.jpg';
 
 const Hero = () => {
     return (
@@ -10,9 +12,9 @@ const Hero = () => {
                 muted
                 loop
                 playsInline
-                poster="/assets/photos/hero-bg.jpg"
+                poster={heroBg}
             >
-                <source src="/assets/videos/hero-video.mp4" type="video/mp4" />
+                <source src={heroVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className={styles.overlay}></div>

@@ -1,0 +1,60 @@
+.section {
+    padding: 6rem 2rem;
+    background-color: var(--color-bg);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid var(--color-gold);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.heading {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.arabic {
+    font-family: 'Amiri', serif;
+    /* Or any nice Arabic font if available via Google Fonts */
+    font-size: 2rem;
+    line-height: 2;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    direction: rtl;
+}
+
+.translation {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 1rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    .arabic {
+        font-size: 1.5rem;
+    }
+
+    .translation {
+        font-size: 0.95rem;
+    }
+}

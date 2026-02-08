@@ -1,0 +1,103 @@
+.section {
+    padding: 6rem 1rem;
+    background: linear-gradient(135deg, #535006 0%, #b6aa05 100%);
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.dateDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.icon {
+    color: var(--color-gold);
+}
+
+.date {
+    font-family: var(--font-script);
+    font-size: 2rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.timeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    min-width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.timeBox:hover {
+    transform: translateY(-5px);
+}
+
+.timeValue {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.timeLabel {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .date {
+        font-size: 1.5rem;
+    }
+
+    .countdown {
+        gap: 1rem;
+    }
+
+    .timeBox {
+        min-width: 80px;
+        padding: 1.5rem 1rem;
+    }
+
+    .timeValue {
+        font-size: 2rem;
+    }
+
+    .timeLabel {
+        font-size: 0.75rem;
+    }
+}
